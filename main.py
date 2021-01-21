@@ -1,11 +1,15 @@
 from selenium import webdriver
 import time
+from fake_useragent import UserAgent
 
+useragent = UserAgent()
 
 # url = "https://www.instagram.com"
 # options
 options = webdriver.ChromeOptions()
-options.add_argument("user-agent=HelloWorld)")
+# options.add_argument("user-agent=HelloWorld)")
+# options.add_argument(f"user-agent={useragent.opera}")
+options.add_argument(f"user-agent={useragent.random}")
 
 driver = webdriver.Chrome(
     executable_path="C:\\Users\\admin\\Desktop\\PythonTest\\selenium-python\\chromedriver\\chromedriver.exe",
