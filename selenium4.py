@@ -33,6 +33,10 @@ try:
     password_input.send_keys(Keys.ENTER)
     time.sleep(10)
 
+    new_link = driver.find_element_by_id("l_nwsf")
+    new_link.click()
+    time.sleep(10)
+
 
 except Exception as ex:
     print(ex)
