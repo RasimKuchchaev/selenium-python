@@ -2,7 +2,6 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
 from data_auth import v_pswrd, v_lgn
-import pickle       #Cookies
 
 
 # options

@@ -19,7 +19,7 @@ driver = webdriver.Chrome(
 
 try:
     driver.get(url="https://intoli.com/blog/not-possible-to-block-chrome-headless/chrome-headless-test.html")
-    time.sleep(5)
+    time.sleep(10)
 
 
 
